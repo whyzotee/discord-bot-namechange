@@ -5,6 +5,10 @@
   "name": "projectt",
   "version": "1.0.0",
   "main": "main.js",
+  "engines": {
+    "node": "16.6.2",
+    "npm": "7.20.3"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node main.js"
