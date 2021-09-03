@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "discord.js": "^13.1.0"
-  }
+  },
+  "name": "projectt",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Z0TEExt/projectT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Z0TEExt/projectT/issues"
+  },
+  "homepage": "https://github.com/Z0TEExt/projectT#readme",
+  "description": ""
 }
