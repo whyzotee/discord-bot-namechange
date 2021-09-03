@@ -5,10 +5,7 @@ const client = new Client({
 
 client.on("ready", () => {
     console.log(`${client.user.username} Ready To Online!`);
-    client.user.setActivity("with depression", {
-        type: "LISTENING",
-        name: "Music"
-    });
+    client.user.setActivity('ซับช่องผมด้วย',{ type: "STREAMING",url: "https://www.twitch.tv/z0teext" });
 });
 client.on('guildCreate', (guild) => {
     if (guild.systemChannel) {
