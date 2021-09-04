@@ -24,7 +24,7 @@ client.on('message', async message => {
 
     //เปลี่ยนชื่อ CH
     if (message.channel.id === '883459115668607076'){     
-        const word = `${"`"}${"\\"}!@#$%^&*()_+{}[]'"<>,./?฿`;
+        const word = "\'\"\\!@#$%^&*()_+{}[]<>`,./?฿";
         if(message.content){
             for(let x=0; x<word.length; x++){
                 if (message.content.startsWith(word[x])){ 
