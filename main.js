@@ -29,19 +29,19 @@ client.on('message', async message => {
             for(let x=0; x<word.length; x++){
                 if (message.content.startsWith(word[x])){ 
                     message.delete();
-                    return message.reply("ไม่สามารถตั้งชื่อขึ้นต้นด้วยตัวอักษรพิเศษ").then((s)=>{setTimeout(()=>{s.delete();},3000)});
+                    return message.channel.send("ไม่สามารถตั้งชื่อขึ้นต้นด้วยตัวอักษรพิเศษ").then((s)=>{setTimeout(()=>{s.delete();},3000)});
                 }
             }
             if(message.content.length > 22){
                 message.delete();
-                return message.reply("ตัวอักษรมากกว่า 22 ตัวจ้า").then((s)=>{setTimeout(()=>{s.delete();},3000)});
+                return message.channel.send("ตัวอักษรมากกว่า 22 ตัวจ้า").then((s)=>{setTimeout(()=>{s.delete();},3000)});
             }
             let name = message.content;
             message.delete();
             let bname = message.member.nickname;
             let x = bname.split(' ').reverse();
             message.member.setNickname(name+" "+x[0]);
-            message.reply("ทำการเปลี่ยนชื่อเรียบร้อยแล้ว").then((s)=>{setTimeout(()=>{s.delete();},3000)});
+            message.channel.send.reply("ทำการเปลี่ยนชื่อเรียบร้อยแล้ว").then((s)=>{setTimeout(()=>{s.delete();},3000)});
         }
     }
     
