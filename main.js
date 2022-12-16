@@ -8,16 +8,6 @@ client.on("ready", () => {
     client.user.setActivity('ซับช่องผมด้วย',{ type: "STREAMING",url: "https://www.twitch.tv/z0teext" });
 });
 
-/*client.on('guildMemberAdd', async member => {
-    console.log(member.guild.id);
-    if(member.guild.id != '868119064164302868'){
-        return;
-    }else{
-        let x = member.user.username;
-        member.setNickname(x+" []");
-    }
-});*/
-
 client.on('message', async message => {
 
     if (message.author.bot) return;
@@ -44,11 +34,6 @@ client.on('message', async message => {
             message.channel.send("ทำการเปลี่ยนชื่อเรียบร้อยแล้ว").then((s)=>{setTimeout(()=>{s.delete();},3000)});
         }
     }
-    
-    //test CH
-    if (message.channel.id === '877084745127845939'){     
-        
-    }
 });
 
-client.login("ODc3MDkxODE1MTU5ODk4MTMz.YRtlaA.VNfmooMEFtbZoluK9JFh3l9DiWY");
+client.login("DISCORD_BOT_TOKEN");
