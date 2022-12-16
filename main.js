@@ -4,7 +4,9 @@ const client = new Client({
 });
 
 client.on("ready", () => {
-    console.log(`${client.user.username} Ready To Online!`);
+    console.log(`${client.user.username} is Ready!`);
+    
+    // สถานะของบอทกำลังสตรีมอยู่, Bot Streaming status
     client.user.setActivity('ซับช่องผมด้วย',{ type: "STREAMING",url: "https://www.twitch.tv/z0teext" });
 });
 
@@ -12,8 +14,8 @@ client.on('message', async message => {
 
     if (message.author.bot) return;
 
-    //เปลี่ยนชื่อ CH
-    if (message.channel.id === '883459115668607076'){     
+    // เปลี่ยนชื่อ CH , name change channel 
+    if (message.channel.id === 'Enter_Your_ChannelID'){     
         const word = "\'\"\\!@#$%&_+-*/^(){}[]<>`,.?฿=";
         if(message.content){
             for(let x=0; x<word.length; x++){
