@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "discord.js": "^13.1.0"
+    "discord.js": "^13.1.0",
+    "dotenv": "^16.0.3"
   },
   "name": "projectt",
   "version": "1.0.0",
@@ -9,7 +10,6 @@
     "node": "16.6.2",
     "npm": "7.20.3"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node main.js"
   },
